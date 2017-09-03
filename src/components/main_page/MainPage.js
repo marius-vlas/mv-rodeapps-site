@@ -53,8 +53,12 @@ class MainPage extends Component {
     setCardsPosition() {
         for (let i = 0; i < this.cards.length; i++) {
             this.cards[i].container.style.transform = 'translateY(' + -(document.body.scrollTop / 4) + 'px) translateZ(0)';
-            this.cards[i].title.style.transform = 'translateY(' + (this.cards[i].container.getBoundingClientRect().top / 10) + 'px) translateZ(0)';
-            this.cards[i].icon.style.transform = 'translateY(' + (this.cards[i].container.getBoundingClientRect().top / 4) + 'px) translateZ(0)';
+
+            const titleMin = this.cards[i].container.getBoundingClientRect().top / 10;
+            const iconMin = this.cards[i].container.getBoundingClientRect().top / 4;
+            this.cards[i].title.style.transform = 'translateY(' + titleMin + 'px) translateZ(0)';
+            this.cards[i].icon.style.transform = 'translateY(' + iconMin + 'px) translateZ(0)';
+
         }
     }
 
@@ -79,9 +83,7 @@ class MainPage extends Component {
     render() {
         return (
             <div className="page-container" id="main-page-container">
-                <div id="rodeapps-title">
-                    <span>RODE</span><span>APPS</span>
-                </div>
+                <div id="rodeapps-title"/>
                 <div id="mini-icons-container">
                     <icon className="fa fa-database" aria-hidden="true"/>
                     <icon className="fa fa-apple" aria-hidden="true"/>
@@ -97,11 +99,9 @@ class MainPage extends Component {
                 </div>
                 <div id="main-motto">This is a great motto text. It is. Even if it's not, we'll make it great.</div>
 
-                {/*<div id="navigation-container">*/}
-                    {/*<div id="current-bar" ref={(navigationCurrentBar) => {*/}
-                        {/*this.navigationCurrentBar = navigationCurrentBar*/}
-                    {/*}}/>*/}
-                {/*</div>*/}
+                {/*<div id="navigation-container">*/} {/*<div id="current-bar" ref={(navigationCurrentBar) => {*/}
+            {/*this.navigationCurrentBar = navigationCurrentBar*/}
+            {/*}}/>*/} {/*</div>*/}
 
                 {this.state.cardsList.map((element, index, array) => {
                     return (

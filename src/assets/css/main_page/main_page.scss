@@ -6,8 +6,37 @@
   width: 760px;
   max-width: calc(100vw - 78px);
   color: $textColor;
+  //margin-bottom: -150px;
 }
 
+#rodeapps-title {
+  font-family: 'Anurati', sans-serif;
+  color: $textColor;
+  text-align: center;
+  margin-top: 90px;
+  filter: drop-shadow(0 2px 5px rgba(black, 0.1));
+  background-image: url(../../img/rodeapps.png);
+  height: 76px;
+  width: calc(100% - 40px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  span:first-child {
+    color: $dodgerBlue;
+  }
+}
+
+#main-motto {
+  color: $textColor;
+  font-size: 47px;
+  font-weight: 100;
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 100px;
+  filter: drop-shadow(0 2px 5px rgba(black, 0.2));
+
+}
 
 #navigation-container {
   position: fixed;
@@ -27,9 +56,60 @@
   }
 }
 
+.card {
+  height: 292px;
+  box-shadow: 0 10px 30px 0 rgba(black, 0.3);
+  width: 760px;
+  max-width: calc(100vw - 78px);
+  margin-bottom: 130px;
+  position: relative;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .card-inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  &.black {
+    background-color: $cardColor;
+    color: $textColor;
+  }
+
+  .card-title {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    font-weight: 400;
+    font-size: 60px;
+    filter: drop-shadow(0 20px 10px rgba(black, 0.6));
+  }
+
+  .card-description {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-weight: 100;
+    font-size: 15px;
+    max-width: calc(100% - 80px);
+  }
+
+  .card-icon {
+    font-size: 100px;
+    color: $dodgerBlue;
+    position: absolute;
+    right: 40px;
+    bottom: 190px;
+    filter: drop-shadow(0 20px 15px rgba(black, 0.3));
+  }
+}
+
 #mini-icons-container {
   .fa {
-    color: #183766;
+    color: #1a386a;
     position: absolute;
     font-size: 15px;
   }
@@ -45,7 +125,6 @@
     font-size: 19px;
   }
 
-
   .fa-android {
     top: 700px;
     right: 14%;
@@ -57,7 +136,6 @@
     left: 36%;
     font-size: 22px;
   }
-
 
   .fa-cloud {
     top: 720px;
@@ -92,74 +170,80 @@
     left: 37%;
     font-size: 21px;
   }
-
 }
 
-#rodeapps-title {
-  font-family: 'Anurati', sans-serif;
-  color: $textColor;
-  font-size: 76px;
-  margin-top: 90px;
-  filter: drop-shadow(0 2px 5px rgba(black, 0.1));
+@media screen and (max-width: 700px) {
 
-  span:first-child {
-    color: $dodgerBlue;
+  #rodeapps-title {
+    margin-top: 40px;
   }
-}
-
-#main-motto {
-  color: $textColor;
-  font-size: 47px;
-  font-weight: 100;
-  margin-top: 90px;
-  text-align: center;
-  margin-bottom: 100px;
-  filter: drop-shadow(0 2px 5px rgba(black, 0.2));
-
-}
-
-.card {
-  height: 292px;
-  box-shadow: 0 10px 30px 0 rgba(black, 0.3);
-  width: 760px;
-  max-width: calc(100vw - 78px);
-  margin-bottom: 130px;
-  position: relative;
-
-  .card-inner {
-    height: 100%;
-    width: 100%;
-    position: relative;
+  #main-motto {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    line-height: 32px;
   }
+  .card {
+    height: 210px;
 
-  &.black {
-    background-color: $cardColor;
-    color: $textColor;
+    margin-bottom: 60px;
+    max-width: calc(100vw - 40px);
+
+    .card-title {
+      font-size: 40px;
+      left: 20px;
+      bottom: 90px;
+    }
+    .card-description {
+      left: 20px;
+      bottom: 20px;
+      font-size: 12px;
+      max-width: calc(100% - 40px);
+    }
+
+    .card-icon {
+      font-size: 80px;
+      bottom: 150px;
+      right: 20px;
+    }
   }
 
-  .card-title {
-    position: absolute;
-    bottom: 120px;
-    left: 40px;
-    font-weight: 400;
-    font-size: 60px;
-    filter: drop-shadow(0 20px 10px rgba(black, 0.6));
+
+  #mini-icons-container {
+    .fa-database {
+      left: 2%;
+      top: 680px;
+      font-size: 17px;
+    }
+    .fa-android {
+      top: 520px;
+      right: 2%;
+      font-size: 23px;
+    }
+
+    .fa-mobile-phone {
+      top: 1050px;
+      left: 27%;
+      font-size: 26px;
+    }
+    .fa-pie-chart {
+      top: 900px;
+      left: 62%;
+      font-size: 20px;
+    }
+
+    .fa-desktop {
+      top: 1150px;
+      left: 25%;
+      font-size: 17px;
+    }
+
+    .fa-chrome {
+      top: 1200px;
+      left: unset;
+      right: 30%;
+      font-size: 21px;
+    }
   }
 
-  .card-description {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    font-weight: 100;
-    font-size: 15px;
-  }
-
-  .card-icon {
-    font-size: 100px;
-    color: $dodgerBlue;
-    position: absolute;
-    right: 40px;
-    bottom: 190px;
-    filter: drop-shadow(0 20px 15px rgba(black, 0.3));
-  }
 }
