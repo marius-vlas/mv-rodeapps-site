@@ -1,0 +1,165 @@
+#main-page-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 760px;
+  max-width: calc(100vw - 78px);
+  color: $textColor;
+}
+
+
+#navigation-container {
+  position: fixed;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 500px;
+  width: 3px;
+  background-color: darken($textColor, 40%);
+  filter: drop-shadow(0 20px 5px rgba(black, 0.5));
+  max-height: calc(100vh - 78px);
+  #current-bar {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: $textColor;
+  }
+}
+
+#mini-icons-container {
+  .fa {
+    color: #183766;
+    position: absolute;
+    font-size: 15px;
+  }
+
+  .fa-database {
+    right: 18%;
+    top: 280px;
+    font-size: 17px;
+  }
+  .fa-apple {
+    top: 540px;
+    left: 21%;
+    font-size: 19px;
+  }
+
+
+  .fa-android {
+    top: 700px;
+    right: 14%;
+    font-size: 23px;
+  }
+
+  .fa-code {
+    top: 790px;
+    left: 36%;
+    font-size: 22px;
+  }
+
+
+  .fa-cloud {
+    top: 720px;
+    right: 32%;
+  }
+
+  .fa-laptop {
+    top: 1100px;
+    right: 20%;
+    font-size: 21px;
+  }
+
+  .fa-mobile-phone {
+    top: 1400px;
+    left: 27%;
+    font-size: 26px;
+  }
+  .fa-pie-chart {
+    top: 1600px;
+    left: 62%;
+    font-size: 20px;
+  }
+
+  .fa-desktop {
+    top: 1800px;
+    right: 25%;
+    font-size: 17px;
+  }
+
+  .fa-chrome {
+    top: 1900px;
+    left: 37%;
+    font-size: 21px;
+  }
+
+}
+
+#rodeapps-title {
+  font-family: 'Anurati', sans-serif;
+  color: $textColor;
+  font-size: 76px;
+  margin-top: 90px;
+  filter: drop-shadow(0 2px 5px rgba(black, 0.1));
+
+  span:first-child {
+    color: $dodgerBlue;
+  }
+}
+
+#main-motto {
+  color: $textColor;
+  font-size: 47px;
+  font-weight: 100;
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 100px;
+  filter: drop-shadow(0 2px 5px rgba(black, 0.2));
+
+}
+
+.card {
+  height: 292px;
+  box-shadow: 0 10px 30px 0 rgba(black, 0.3);
+  width: 760px;
+  max-width: calc(100vw - 78px);
+  margin-bottom: 130px;
+  position: relative;
+
+  .card-inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  &.black {
+    background-color: $cardColor;
+    color: $textColor;
+  }
+
+  .card-title {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    font-weight: 400;
+    font-size: 60px;
+    filter: drop-shadow(0 20px 10px rgba(black, 0.6));
+  }
+
+  .card-description {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .card-icon {
+    font-size: 100px;
+    color: $dodgerBlue;
+    position: absolute;
+    right: 40px;
+    bottom: 190px;
+    filter: drop-shadow(0 20px 15px rgba(black, 0.3));
+  }
+}

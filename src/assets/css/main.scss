@@ -1,0 +1,61 @@
+$dodgerBlue: #3893FF;
+$pageBackgroundColor: #262a2e;
+$cardColor: #202326;
+$textColor: white;
+
+@font-face {
+  font-family: "Anurati";
+  src: url("/fonts/anurati/Anurati-Regular.otf") format("opentype");
+}
+
+//@font-face {
+//  font-family: "Saira SemiCondensed";
+//  src: url("/fonts/saira_semi_condensed/SairaSemiCondensed-ExtraLight.ttf") format("truetype");
+//  font-weight: 100;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: "Saira SemiCondensed";
+//  src: url("/fonts/saira_semi_condensed/SairaSemiCondensed-Light.ttf") format("truetype");
+//  font-weight: 200;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: "Saira SemiCondensed";
+//  src: url("/fonts/saira_semi_condensed/SairaSemiCondensed-Regular.ttf") format("truetype");
+//  font-weight: 300;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: "Saira SemiCondensed";
+//  src: url("/fonts/saira_semi_condensed/SairaSemiCondensed-Medium.ttf") format("truetype");
+//  font-weight: 400;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: "Saira SemiCondensed";
+//  src: url("/fonts/saira_semi_condensed/SairaSemiCondensed-SemiBold.ttf") format("truetype");
+//  font-weight: 500;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: "Saira SemiCondensed";
+//  src: url("/fonts/saira_semi_condensed/SairaSemiCondensed-Bold.ttf") format("truetype");
+//  font-weight: 600;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: "Saira SemiCondensed";
+//  src: url("/fonts/saira_semi_condensed/SairaSemiCondensed-ExtraBold.ttf") format("woff");
+//  font-weight: 700;
+//  font-style: normal;
+//}
+
+@import 'main_page/main_page.scss';
+@import 'index.scss';
