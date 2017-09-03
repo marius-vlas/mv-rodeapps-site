@@ -52,9 +52,9 @@ class MainPage extends Component {
 
     setCardsPosition() {
         for (let i = 0; i < this.cards.length; i++) {
-            this.cards[i].container.style.transform = 'translateY(' + -(document.body.scrollTop / 4) + 'px)';
-            this.cards[i].title.style.transform = 'translateY(' + (this.cards[i].container.getBoundingClientRect().top / 10) + 'px)';
-            this.cards[i].icon.style.transform = 'translateY(' + (this.cards[i].container.getBoundingClientRect().top / 4) + 'px)';
+            this.cards[i].container.style.transform = 'translateY(' + -(document.body.scrollTop / 4) + 'px) translateZ(0)';
+            this.cards[i].title.style.transform = 'translateY(' + (this.cards[i].container.getBoundingClientRect().top / 10) + 'px) translateZ(0)';
+            this.cards[i].icon.style.transform = 'translateY(' + (this.cards[i].container.getBoundingClientRect().top / 4) + 'px) translateZ(0)';
         }
     }
 
