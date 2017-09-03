@@ -43,6 +43,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "babel-plugin-transform-react-display-name": "^6.25.0",
     "gulp": "^3.9.1",
     "gulp-run": "^1.7.1",
     "node-sass": "^4.5.3",
