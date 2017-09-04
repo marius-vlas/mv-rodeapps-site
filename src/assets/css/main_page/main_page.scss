@@ -115,7 +115,7 @@ $navigationBarWidth: 19px;
     left: 40px;
     font-weight: 400;
     font-size: 60px;
-    filter: drop-shadow(0 15px 8px rgba(black, 0.5));
+    filter: drop-shadow(0 10px 5px rgba(black, 0.5));
   }
 
   .card-description {
@@ -132,14 +132,15 @@ $navigationBarWidth: 19px;
     color: $dodgerBlue;
     position: absolute;
     right: 40px;
-    bottom: 190px;
-    filter: drop-shadow(0 20px 15px rgba(black, 0.2));
+    bottom: 170px;
+    filter: drop-shadow(0 30px 15px rgba(black, 0.3));
   }
 }
 
 #mini-icons-container {
   .fa {
-    color: #1a386a;
+    color: darken($dodgerBlue, 35%);
+    filter: grayscale(50%);
     position: absolute;
     font-size: 15px;
   }
