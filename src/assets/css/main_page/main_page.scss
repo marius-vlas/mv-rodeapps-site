@@ -6,7 +6,6 @@
   width: 760px;
   max-width: calc(100vw - 78px);
   color: $textColor;
-  //margin-bottom: -150px;
 }
 
 #rodeapps-title {
@@ -38,21 +37,52 @@
 
 }
 
+$navigationBarWidth: 19px;
+
 #navigation-container {
   position: fixed;
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
   height: 500px;
-  width: 3px;
-  background-color: darken($textColor, 40%);
-  filter: drop-shadow(0 20px 5px rgba(black, 0.5));
+  width: $navigationBarWidth;
+  background-color: darken($textColor, 50%);
+  border: 0 solid $pageBackgroundColor;
+  border-right-width: 8px;
+  border-left-width: 8px;
   max-height: calc(100vh - 78px);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
   #current-bar {
     position: absolute;
-    width: 100%;
+    right: -8px;
+    width: $navigationBarWidth;
+    border: 0 solid $pageBackgroundColor;
+    border-right-width: 8px;
+    border-left-width: 8px;
     height: 20px;
-    background-color: $textColor;
+    background-color: darken($textColor, 20%);
+    cursor: ns-resize;
+  }
+
+
+  span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    cursor: pointer;
+    font-weight: 100;
+    color: darken($textColor, 20%);
+    user-select: none;
+    filter: drop-shadow(0 10px 5px rgba(black, 0.3));
+
+    &.highlighted {
+      font-weight: 200;
+      color: $textColor;
+    }
   }
 }
 
@@ -85,7 +115,7 @@
     left: 40px;
     font-weight: 400;
     font-size: 60px;
-    filter: drop-shadow(0 20px 10px rgba(black, 0.6));
+    filter: drop-shadow(0 15px 8px rgba(black, 0.5));
   }
 
   .card-description {
@@ -103,7 +133,7 @@
     position: absolute;
     right: 40px;
     bottom: 190px;
-    filter: drop-shadow(0 20px 15px rgba(black, 0.3));
+    filter: drop-shadow(0 20px 15px rgba(black, 0.2));
   }
 }
 
