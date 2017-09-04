@@ -131,6 +131,10 @@ class MainPage extends Component {
         window.scrollTo(0, this.initialScroll + yDiff * heightsRatio);
     }
 
+    setBackgroundColor() {
+        document.getElementById('background').style.filter = `brightness(${100 + document.body.scrollTop / 20}%)`;
+    }
+
     componentDidMount() {
         this.setCardsPosition();
         if (!browserIsMobile()) {
@@ -143,6 +147,8 @@ class MainPage extends Component {
             if (!browserIsMobile()) {
                 this.setNavigationPosition();
             }
+
+            this.setBackgroundColor();
         });
 
         if (!browserIsMobile()) {

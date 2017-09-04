@@ -13,7 +13,7 @@
   color: $textColor;
   text-align: center;
   margin-top: 90px;
-  filter: drop-shadow(0 2px 5px rgba(black, 0.1));
+  filter: drop-shadow(0 1px 2px rgba(black, 0.1));
   background-image: url(../../img/rodeapps.png);
   height: 76px;
   width: calc(100% - 40px);
@@ -37,7 +37,7 @@
 
 }
 
-$navigationBarWidth: 19px;
+$navigationBarWidth: 3px;
 
 #navigation-container {
   position: fixed;
@@ -48,8 +48,8 @@ $navigationBarWidth: 19px;
   width: $navigationBarWidth;
   background-color: darken($textColor, 50%);
   border: 0 solid $pageBackgroundColor;
-  border-right-width: 8px;
-  border-left-width: 8px;
+  //border-right-width: 8px;
+  //border-left-width: 8px;
   max-height: calc(100vh - 78px);
   display: flex;
   flex-flow: column;
@@ -58,11 +58,11 @@ $navigationBarWidth: 19px;
 
   #current-bar {
     position: absolute;
-    right: -8px;
+    //right: -8px;
     width: $navigationBarWidth;
     border: 0 solid $pageBackgroundColor;
-    border-right-width: 8px;
-    border-left-width: 8px;
+    //border-right-width: 8px;
+    //border-left-width: 8px;
     height: 20px;
     background-color: darken($textColor, 20%);
     cursor: ns-resize;
@@ -93,6 +93,13 @@ $navigationBarWidth: 19px;
   max-width: calc(100vw - 78px);
   margin-bottom: 130px;
   position: relative;
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  &:hover {
+    filter: brightness(150%);
+    box-shadow: 0 15px 40px 0 rgba(black, 0.2);
+  }
+
 
   &:last-of-type {
     margin-bottom: 0;
@@ -139,7 +146,7 @@ $navigationBarWidth: 19px;
 
 #mini-icons-container {
   .fa {
-    color: darken($dodgerBlue, 35%);
+    color: darken($dodgerBlue, 17%);
     filter: grayscale(50%);
     position: absolute;
     font-size: 15px;
@@ -234,7 +241,7 @@ $navigationBarWidth: 19px;
 
     .card-icon {
       font-size: 80px;
-      bottom: 150px;
+      bottom: 140px;
       right: 20px;
     }
   }
